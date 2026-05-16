@@ -120,7 +120,7 @@ int main()
 			message.setString("Chaos Game running: Sierpinski Triangle");
 		}
 
-		for (int i = 0; i < vertices.size(); i++)
+		for (int i = 0; i < (int)vertices.size(); i++)
 		{
 			RectangleShape rect(Vector2f(10, 10));
 			rect.setPosition(Vector2f(vertices[i].x, vertices[i].y));
@@ -128,7 +128,7 @@ int main()
 			window.draw(rect);
 		}
 		///Draw points
-		for (int i = 0; i < points.size(); i++)
+		for (int i = 0; i < (int)points.size(); i++)
 		{
 			RectangleShape point(Vector2f(2, 2));
 			point.setPosition(points[i]);
